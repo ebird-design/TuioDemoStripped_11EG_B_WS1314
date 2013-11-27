@@ -1,7 +1,7 @@
 class Particle {
 
   PVector velocity;
-  float lifespan = 255;
+  float lifespan = 455;
   
   PShape part;
   float partSize;
@@ -22,8 +22,8 @@ class Particle {
     part.vertex(-partSize/8, +partSize/8, 0, sprite.height);
     part.endShape();
     
-    rebirth(width/4,height/4);
-    lifespan = random(450);
+    rebirth(width/2,height/2);
+    lifespan = random(550);
   }
 
   PShape getShape() {

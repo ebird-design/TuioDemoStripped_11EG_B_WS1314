@@ -35,8 +35,7 @@ void setup() {
 
 void draw () {
   background(0);
-  ps.update();
-  ps.display();
+
   
   fill(255);
   textSize(16);
@@ -65,6 +64,8 @@ void draw () {
       Vector pointList = tcur.getPath();
       
       if (pointList.size()>0) {
+          ps.update();
+          ps.display();
         stroke(255,80);
         TuioPoint start_point = (TuioPoint)pointList.firstElement();;
     
